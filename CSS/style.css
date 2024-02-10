@@ -42,17 +42,31 @@ a {
 }
 
 .wrapper {
-    width: 50%;
-    color: #222222;
+    width: 55%;
+    /*color: #222222;*/
     font-size: 18px;
     margin: auto;
 /*    background: red;*/
 }
 
 header {
+    height: 5vh;
     width: 100%;
     background-color: #000;
     padding: var(--padding);
+}
+
+header a {
+/*    height: 5vh;*/
+    color: #FFF;
+    text-decoration: none;
+    padding: 8px 14px;
+    white-space: nowrap;
+    border-radius: 8px;
+}
+
+header a:hover {
+    background-color: #303030;
 }
 
 main {
@@ -60,16 +74,7 @@ main {
     flex: 1 1 auto;
 }
 
-header a {
-    color: #FFF;
-    text-decoration: none;
-    padding: 8px 14px;
-    border-radius: 8px;
-}
 
-header a:hover {
-    background-color: #303030;
-}
 
 footer {
     width: 100%;
@@ -91,7 +96,7 @@ footer img {
     margin: 4px;
 }
 
-@media (orientation: portrait) {
+@media (orientation:portrait) {
     .wrapper {
         width: 100%;
     }
