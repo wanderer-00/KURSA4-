@@ -1,7 +1,0 @@
-C:\Users\root\Desktop\PUBLIC\WinFormsApp1.pdb
-C:\Users\root\Desktop\PUBLIC\D3DCompiler_47_cor3.dll
-C:\Users\root\Desktop\PUBLIC\PenImc_cor3.dll
-C:\Users\root\Desktop\PUBLIC\PresentationNative_cor3.dll
-C:\Users\root\Desktop\PUBLIC\vcruntime140_cor3.dll
-C:\Users\root\Desktop\PUBLIC\wpfgfx_cor3.dll
-C:\Users\root\Desktop\PUBLIC\WinFormsApp1.exe
