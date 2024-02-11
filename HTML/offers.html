@@ -46,29 +46,44 @@
 
                 </div>
             </div>
-            <section>
-                <hr class="HRstyle1" style="position:absolute; left: 0px; top: 20vh; width: 100%; height: 1px; z-index: 3" />
-                <article id="article_one" style="position:absolute; left: 5vh; top: 20vh; width: 315px; height: 195px; z-index: 2">
-                    <h1>Просто поспать</h1>
-                    <img src="../IMG/PNG/beds/bed1.png">
+
+            <style>
+                .cluster {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+                
+                
+                .cluster img {
+                    width: 100px;
+                }
+                
+                .cluster > div {
+                    display: grid;
+                    margin: 10px;
+                    border: 1px solid red
+                }
+            </style>
+
+            <div class="cluster">
+                <div class="box">
+                    <h2>Просто поспать</h2>
+                    <img src="../IMG/SVG/beds/bed1.svg">
                     <p>Здоровый сон на свежем воздухе</p>
-                </article>
-                <article id="article two" style="position: absolute; left: 45vh; top: 20vh; width: 315px; height: 195px; z-index: 2">
+                </div>
 
-                    <h1>Поспать в коробке</h1>
-                    <img src="../IMG/PNG/beds/bed2.png">
+                <div class="box">
+                    <h2>Поспать в коробке</h2>
+                    <img src="../IMG/SVG/beds/bed2.svg">
                     <p>Бюджетное решение</p>
-                </article>
-                <article id="article_three" style="position: absolute; left: 85vh; top: 20vh; width: 315px; height: 195px; z-index: 2">
+                </div>
 
-                    <h1>Комната на 1 день</h1>
-                    <img src="../IMG/PNG/beds/bed4.png">
+                <div class="box">
+                    <h2>Комната на 1 день</h2>
+                    <img src="../IMG/SVG/beds/bed4.svg">
                     <p>Предложение для состоятельных клиентов</p>
-                </article>
-                <hr class="HRstyle2" style="position:absolute; left: 0px; top: 45vh; width: 100%; height: 1px; z-index: 3" />
-            </section>
-
-
+                </div>
+            </div>
         </main>
 
 
