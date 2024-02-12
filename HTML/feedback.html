@@ -33,14 +33,80 @@
 
 
         <main>
+
+
+            <style>
+                .grade {
+                    
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                    width: 70px;
+                }
+                 .grade img {
+                    width: 70px;
+                    margin: 0;
+                }
+                .grade>img:hover {
+                    background-color: gold;
+                }
+
+            </style>
+
+
+
+
             <div class="wrapper">
 
                 <div class="wrapper_m">
                     <h2>Оставить отзыв</h2>
+                    <div>
+                        <form>
+                            <p></p>
+                            <p>Ваше имя*<br />
+                                <input name="name" ENGINE="text" />
+                            </p>
+                            <p>Электронная почта*<br />
+                                <input name="email" type="text" />
+                            </p>
+                            <p>Тема сообщения:<br />
+                                <input name="sub" type="text" />
+                            </p>
+                            <p>Текст сообщения:<br /><textarea name="body" cols="50" rows="5"></textarea></p>
+
+                            <grade>
+                                <div class="grade">
+
+                                    <img src="../IMG/SVG/star/star_f2.svg">
+                                    
+                                    <img src="../IMG/SVG/star/start_white.svg">
+                                    
+                                    <img src="../IMG/SVG/star/start_white.svg">
+                                    
+                                    <img src="../IMG/SVG/star/start_white.svg">
+                                    
+                                    <img src="../IMG/SVG/star/start_white.svg">
+
+                                </div>
+                           </grade>
+
+                            <p><input value="Отправить" type="submit" /></p>
+                        </form>
+                        <form action="index.html" target="_blank"></form>
+                        <!--                            <button>Главное меню</button>-->
+                    </div>
+
                     <p></p>
+
+
+
+
+
+
+
                 </div>
             </div>
         </main>
+
 
         <footer>
             <div class="wrapper">
@@ -53,9 +119,6 @@
             </div>
         </footer>
     </div>
+</body>
 
-</body></html>
-
-
-
-
+</html>

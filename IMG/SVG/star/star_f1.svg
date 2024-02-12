@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 71.827 69.476 L 100.143 0 L 127.853 70.086 L 200 76.175 L 144.903 126.415 L 161.954 200 L 100.447 160.213 L 38.333 200 L 54.775 126.112 L 0 76.48 L 71.827 69.476 Z" style="stroke: rgb(0, 0, 0); fill-rule: evenodd; fill: none; stroke-width: 7px;"/>
+  <path d="M 38.371 200 L 99.696 200 L 163.456 200 L 200 200 L 200 75.432 L 200 0 L 100.609 0 L 0 0 L 0 76.874 L 0 200 L 38.371 200 Z M 38.278 200 L 54.579 126.012 L 0 76.42 L 71.978 68.77 L 100 0 L 128.388 69.683 L 200 75.81 L 146.323 126.012 L 162.041 200 L 100.16 160.648 L 38.278 200 Z M 100 106.064 Z" style="fill: rgb(255, 255, 255); fill-rule: evenodd; stroke-width: 5px;"/>
+</svg>
