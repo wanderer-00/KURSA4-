@@ -13,7 +13,6 @@ body {
 }
 
 a {
-    color: #FFF;
     text-decoration: none
 }
 
@@ -48,6 +47,7 @@ a {
     margin: auto;
     /*    background: red;*/
 }
+
 .wrapper_m {
     width: 100%;
     /*color: #222222;*/
@@ -55,6 +55,7 @@ a {
     margin: auto;
     /*    background: red;*/
 }
+
 .wrapper_f {
     width: 55%;
     /*color: #222222;*/

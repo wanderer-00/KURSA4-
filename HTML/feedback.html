@@ -52,6 +52,7 @@
                 .grade>img:hover {
                     background-color: gold;
                 }
+
             </style>
 
 
@@ -107,6 +108,19 @@
                 </div>
             </div>
 
+            <style>
+                .usersFeed>div {
+                    border-radius: 1em;
+                    margin: 1em 0;
+                    padding: 1em;
+                    -webkit-box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.4);
+                    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+                    box-shadow: 2px 2px 8px 2px rgba(34, 60, 80, 0.2);
+                }
+
+            </style>
+
+
             <div class="usersFeed">
 
                 <div>
@@ -122,9 +136,9 @@
             <script>
                 var usersFeed = document.getElementsByClassName("usersFeed")[0];
 
-                for (i=0; i<U.length; i++) {
+                for (i = 0; i < U.length; i++) {
                     usersFeed.innerHTML += `
-                        <div style="border: 1px solid red">
+                        <div>
                             <div class="name" style="font-size: 30px;">${U[i].NAME}</div>
                             <div>${U[i].EMAIL}</div>
                             <div>${U[i].TITLE}</div>
@@ -133,6 +147,7 @@
                         </div>
                 `;
                 };
+
             </script>
 
 
@@ -151,6 +166,5 @@
         </footer>
     </div>
 </body>
+
 </html>
-
-
