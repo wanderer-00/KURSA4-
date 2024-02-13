@@ -42,15 +42,16 @@
                     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
                     width: 70px;
                 }
+                
+                .wrapper_m input,
+                .wrapper_m textarea {
+                    padding: 6px;
+                    margin: 6px 0;
+                }
 
                 .grade img {
                     width: 50px;
-                    ;
                     margin: 0;
-                }
-
-                .grade>img:hover {
-                    background-color: gold;
                 }
 
             </style>
@@ -68,23 +69,23 @@
                         <div style="margin: 1em 0">
                             <div>Ваше имя<font color="red">*</font>
                             </div>
-                            <input name="name" ENGINE="text">
+                            <input name="name" type="text" placeholder="Иван Иванов Иванович">
                         </div>
 
                         <div style="margin: 1em 0">
                             <div>Электронная почта<font color="red">*</font>
                             </div>
-                            <input name="email" type="text">
+                            <input name="email" type="text" placeholder="123@email.ru">
                         </div>
 
                         <div style="margin: 1em 0">
                             <div>Тема сообщения</div>
-                            <input name="sub" type="text">
+                            <input name="sub" type="text" placeholder="Вопрос">
                         </div>
 
                         <div style="margin: 1em 0">
                             <div>Текст сообщения</div>
-                            <textarea name="body" cols="50" rows="5"></textarea><br>
+                            <textarea name="body" cols="50" rows="5" placeholder="Мне понравилось, но...."></textarea><br>
                         </div>
 
 
@@ -94,11 +95,11 @@
 
                         <grade style="margin: 1em 0">
                             <div class="grade">
-                                <img src="../IMG/SVG/star/star_f2.svg">
-                                <img src="../IMG/SVG/star/star_f2.svg">
-                                <img src="../IMG/SVG/star/star_f2.svg">
-                                <img src="../IMG/SVG/star/star_f2.svg">
-                                <img src="../IMG/SVG/star/star_f2.svg">
+                                <img src="../IMG/SVG/star/1.svg">
+                                <img src="../IMG/SVG/star/1.svg">
+                                <img src="../IMG/SVG/star/1.svg">
+                                <img src="../IMG/SVG/star/1.svg">
+                                <img src="../IMG/SVG/star/1.svg">
                             </div>
                         </grade>
 
@@ -110,6 +111,7 @@
 
             <style>
                 .usersFeed>div {
+                    display: flex;
                     border-radius: 1em;
                     margin: 1em 0;
                     padding: 1em;
@@ -118,20 +120,24 @@
                     box-shadow: 2px 2px 8px 2px rgba(34, 60, 80, 0.2);
                 }
 
+                .usersFeed>div>.icon {
+                    margin-right: 1em;
+                    height: 160px;
+                    aspect-ratio: 1/1;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    border-radius: 0.5em
+                }
+                
+                .mGrade img {
+                    width: 30px;
+                }
             </style>
 
 
-            <div class="usersFeed">
-
-                <div>
-                    <div class="name">Имя</div>
-                    <a href="mailto:ask@htmlbook.ru">valera123@gmail.com</a>
-                    <div>Заголовок</div>
-                    <p>Текст</p>
-                    <div>Оценка</div>
-                </div>
-
-            </div>
+            <div class="usersFeed"></div>
+            
             <script type="text/javascript" src="../BD/users.js"></script>
             <script>
                 var usersFeed = document.getElementsByClassName("usersFeed")[0];
@@ -139,15 +145,30 @@
                 for (i = 0; i < U.length; i++) {
                     usersFeed.innerHTML += `
                         <div>
-                            <div class="name" style="font-size: 30px;">${U[i].NAME}</div>
-                            <div>${U[i].EMAIL}</div>
-                            <div>${U[i].TITLE}</div>
-                            <p>${U[i].NOTE}</p>
-                            <div>Оценка: ${U[i].GRADE}</div>
-                        </div>
-                `;
-                };
+                            <div class="icon" style="background-image: url(../IMG/Ava/${i+1}.png)"></div>
 
+                            <div>
+                                <div class="name" style="font-size: 30px;">${U[i].NAME}</div>
+                                <a href="#">${U[i].EMAIL}</a>
+                                <div>${U[i].TITLE}</div>
+                                <div class="note">${U[i].NOTE}</div>
+                                <div class="mGrade">${grade(i)}</div>
+                            </div>
+
+                        </div>`;
+                };
+                
+                function grade(i) {
+                    var n = '';
+            
+                    for( m=0; m<U[i].GRADE; m++ ){
+                        n += '<img src="../IMG/SVG/star/star_f2.svg">'
+                    };
+                    
+                    console.log(n);
+                    
+                    return n;
+                }
             </script>
 
 
@@ -165,6 +186,4 @@
             </div>
         </footer>
     </div>
-</body>
-
-</html>
+</body></html>
