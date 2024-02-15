@@ -20,7 +20,7 @@ var U = [
     {
         "NAME": "рус12",
         "ICON": "",
-        "EMAIL": "xuy121212@mail.ru",
+        "EMAIL": "xyz121212@mail.ru",
         "TITLE": "Хмм",
         "NOTE": "Непонял",
         "GRADE": 3
