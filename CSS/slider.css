@@ -1,7 +1,6 @@
 /* Слайдер */
 .slick-slider{
 	min-width: 0;
-    border: 1px solid red;
 }
 /* Ограничивающая оболочка */
 .slick-list {
