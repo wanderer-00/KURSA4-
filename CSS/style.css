@@ -1,52 +1,93 @@
+/* Переменные */
 :root {
     --color-text: #FFF;
-    --padding: 20px;
+    --header-height: 7vh;
+    --header-text-color: #FFF;
 }
 
 /* scroll bar */
 ::-webkit-scrollbar {width: 14px}
 ::-webkit-scrollbar-track {background: #eeeeee}
-::-webkit-scrollbar-thumb {
-    background: #aaaaaa;
-    border-radius: 6px;
-}
+::-webkit-scrollbar-thumb {background: #aaaaaa; border-radius: 6px}
 ::-webkit-scrollbar-thumb:hover {background: #999}
+
+
+/* Все элементы страницы */
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
 
 html,
 body {
     height: 100%;
-    margin: -10px;
+    margin: 0;
     padding: 0;
     width: 100%;
-    font-family: sans-serif;
 }
 
-a {
-    text-decoration: none
-}
+a {text-decoration: none}
 
-.logo {
-    height: 50px;
-    margin-right: 0px;
+
+
+/* HEADER */
+header {
     display: flex;
-    text-align: center;
-    vertical-align: middle;
+    height: var(--header-height);
+    width: 100%;
+    background-color: #000;
 }
 
-.logo img {
-    height: 100%;
+    /* Логотип компании */
+    .logo {
+        align-items: center;
+        position: absolute;
+        height: var(--header-height);
+        display: flex;
+        margin-left: 10px;
+    }
+
+    .logo img {
+        height: calc( var(--header-height) - 1vh);
+    }
+
+    .logo div {
+        display: inline-block;
+        width: auto;
+        height: auto;
+    }
+    .logo a {
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        font-size: 1.4em;
+    }
+    /* Логотип компании */
+
+header a {
+    color: var(--header-text-color);
+    padding: 8px 14px;
+    white-space: nowrap;
+    border-radius: 8px;
 }
 
-.logo div {
-    display: inline-block;
-    width: auto;
-    height: auto;
+header a:hover {
+    background-color: #303030;
 }
-.logo a {
-    display: inline-block;
-    width: auto;
-    height: auto;
+
+/* Блок навигации */
+header .wrapper {
+    display: flex; /* элементы в одну строчку */
+    justify-content: center; /* элементы по центру */
+    margin: auto; /* контейнер по центру */
+    
+flex-wrap: nowrap;
+align-items: center;
 }
+/* HEADER */
+
+
+
 
 .cover {
     min-height: 100%;
@@ -56,19 +97,14 @@ a {
 
 .wrapper {
     width: 65%;
-    /*color: #222222;*/
     font-size: 18px;
     margin: auto;
-    /*    background: red;*/
 }
 
 .wrapper_m {
-    
     width: 100%;
-    /*color: #222222;*/
     font-size: 22px;
     margin: 1vh;
-    /*    background: red;*/
 }
 .wrapper_m > a > img {
     
@@ -85,27 +121,7 @@ a {
     /*    background: red;*/
 }
 
-header {
-    margin: auto;
-    height: auto;
-    width: 100%;
-    background-color: #000;
-    padding: var(--padding);
-}
 
-header a {
-    /*    height: 5vh;*/
-    margin-left:1px;
-    color: #FFF;
-    text-decoration: none;
-    padding: 8px 14px;
-    white-space: nowrap;
-    border-radius: 8px;
-}
-
-header a:hover {
-    background-color: #303030;
-}
 
 main {
     font-size: 24px;
@@ -139,4 +155,6 @@ footer img {
     .wrapper {
         width: 100%;
     }
+    
+    header .wrapper {display: none}
 }
