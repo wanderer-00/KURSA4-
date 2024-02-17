@@ -13,20 +13,20 @@
     <div class="cover">
 
         <header>
-               
+
             <!-- Блок логотипа -->
             <div class="logo">
-                <a href="index.html"><img src="../IMG/favicon.svg" alt="Логотип компании"></a>
-                <a href="index.html">Название_Компании</a>
+                <a href="../index.html"><img src="../IMG/favicon.svg" alt="Логотип компании"></a>
+                <a href="../index.html">Название_Компании</a>
             </div>
 
 
             <!-- Навишационный блок -->
             <div class="wrapper">
-                <a href="HTML/about.html">О нас</a>
-                <a href="HTML/offers.html">Предложения</a>
-                <a href="HTML/feedback.html">Отзывы</a>
-                <a href="HTML/contact.html">Контакты</a>
+                <a href="/HTML/about.html">О нас</a>
+                <a href="/HTML/offers.html">Предложения</a>
+                <a href="/HTML/feedback.html">Отзывы</a>
+                <a href="/HTML/contact.html">Контакты</a>
             </div>
 
         </header>
@@ -42,7 +42,7 @@
                     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
                     width: 70px;
                 }
-                
+
                 .wrapper_m input,
                 .wrapper_m textarea {
                     padding: 6px;
@@ -53,7 +53,6 @@
                     width: 50px;
                     margin: 0;
                 }
-
             </style>
 
 
@@ -93,53 +92,55 @@
                             <font color="red">*</font> - обязательное к заполнению
                         </div>
 
-                   
-                           
-                            <grade5 style="margin: 1em 0;font-size: 2.8em;">
-                             <div class="grade5">
-                              <font color="#999">★</font>
-                              <font color="#999">★</font>
-                              <font color="#999">★</font>
-                              <font color="#999">★</font>
-                              <font color="#999">★</font>
-                             </div> 
-                            </grade5>
-                            <style>.grade5 font:hover{color: gold;
-                                
-                                
-                                } </style>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+
+
+                        <grade5 style="margin: 1em 0;font-size: 2.8em;">
+                            <div class="grade5">
+                                <font color="#999">★</font>
+                                <font color="#999">★</font>
+                                <font color="#999">★</font>
+                                <font color="#999">★</font>
+                                <font color="#999">★</font>
+                            </div>
+                        </grade5>
+                        <style>
+                            .grade5 font:hover {
+                                color: gold;
+
+
+                            }
+                        </style>
+
+
+
+
+
+
+
                         <script>
                             var grade5 = document.getElementsByClassName('grade5')[];
                             var starColorCount = 0;
-                            function Paint(){document.getElementByClassName("grade5").style.color = "gold";};
 
+                            function Paint() {
+                                document.getElementByClassName("grade5").style.color = "gold";
+                            };
                         </script>
-                            
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
+
+
+
+
 
                         <button style="padding: 6px 10px; font-size: 0.8em; margin: 1em 0; cursor: pointer">Отправить</button>
                     </div>
 
                 </div>
-                
-                
+
+
                 <div class="usersFeed"></div>
             </div>
 
@@ -163,15 +164,15 @@
                     background-size: contain;
                     border-radius: 0.5em
                 }
-                
+
                 .mGrade img {
                     width: 30px;
                 }
             </style>
 
 
-            
-            
+
+
             <script type="text/javascript" src="../BD/users.js"></script>
             <script>
                 var usersFeed = document.getElementsByClassName("usersFeed")[0];
@@ -191,16 +192,16 @@
 
                         </div>`;
                 };
-                
+
                 function grade(i) {
                     var n = '';
-            
-                    for( m=0; m<U[i].GRADE; m++ ){
+
+                    for (m = 0; m < U[i].GRADE; m++) {
                         n += '<font style="font-size: 2.5em;color:gold;">★</font>'
                     };
-                    
+
                     console.log(n);
-                    
+
                     return n;
                 }
             </script>
