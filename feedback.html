@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Отзывы</title><!-- Название вкладки -->
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css"><!-- Файл с основными стилями -->
+    <link rel="icon" href="../IMG/favicon.svg" type="image/x-icon"><!-- Иконка вкладки брацзера -->
+    <link rel="stylesheet" type="text/css" href="../CSS/slider.css">
+</head>
+
+<body>
+    <div class="cover">
+
+        <header>
+
+            <!-- Блок логотипа -->
+            <div class="logo">
+                <a href="../index.html"><img src="../IMG/favicon.svg" alt="Логотип компании"></a>
+                <a href="../index.html">Название_Компании</a>
+            </div>
+
+
+            <!-- Навишационный блок -->
+            <div class="wrapper">
+                <a href="/HTML/about.html">О нас</a>
+                <a href="/HTML/offers.html">Предложения</a>
+                <a href="/HTML/feedback.html">Отзывы</a>
+                <a href="/HTML/contact.html">Контакты</a>
+            </div>
+
+        </header>
+
+
+        <main>
+
+
+            <style>
+                .grade {
+
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                    width: 70px;
+                }
+
+                .wrapper_m input,
+                .wrapper_m textarea {
+                    padding: 6px;
+                    margin: 6px 0;
+                }
+
+                .grade img {
+                    width: 50px;
+                    margin: 0;
+                }
+            </style>
+
+
+
+
+            <div class="wrapper">
+
+                <div class="wrapper_m">
+
+                    <h2>Оставить отзыв</h2>
+
+                    <div>
+                        <div style="margin: 1em 0">
+                            <div>Ваше имя<font color="red">*</font>
+                            </div>
+                            <input name="name" type="text" placeholder="Иван Иванов Иванович">
+                        </div>
+
+                        <div style="margin: 1em 0">
+                            <div>Электронная почта<font color="red">*</font>
+                            </div>
+                            <input name="email" type="text" placeholder="123@email.ru">
+                        </div>
+
+                        <div style="margin: 1em 0">
+                            <div>Тема сообщения</div>
+                            <input name="sub" type="text" placeholder="Вопрос">
+                        </div>
+
+                        <div style="margin: 1em 0">
+                            <div>Текст сообщения</div>
+                            <textarea name="body" cols="50" rows="5" placeholder="Мне понравилось, но...."></textarea><br>
+                        </div>
+
+
+                        <div style="margin: 1em 0">
+                            <font color="red">*</font> - обязательное к заполнению
+                        </div>
+
+
+
+                        <grade5 style="margin: 1em 0;font-size: 2.8em;">
+                            <div class="grade5">
+                                <font color="#999">★</font>
+                                <font color="#999">★</font>
+                                <font color="#999">★</font>
+                                <font color="#999">★</font>
+                                <font color="#999">★</font>
+                            </div>
+                        </grade5>
+                        <style>
+                            .grade5 font:hover {
+                                color: gold;
+
+
+                            }
+                        </style>
+
+
+
+
+
+
+
+                        <script>
+                            var grade5 = document.getElementsByClassName('grade5')[];
+                            var starColorCount = 0;
+
+                            function Paint() {
+                                document.getElementByClassName("grade5").style.color = "gold";
+                            };
+                        </script>
+
+
+
+
+
+
+
+
+
+
+                        <button style="padding: 6px 10px; font-size: 0.8em; margin: 1em 0; cursor: pointer">Отправить</button>
+                    </div>
+
+                </div>
+
+
+                <div class="usersFeed"></div>
+            </div>
+
+            <style>
+                .usersFeed>div {
+                    display: flex;
+                    border-radius: 1em;
+                    margin: 1em 0;
+                    padding: 1em;
+                    -webkit-box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.4);
+                    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+                    box-shadow: 2px 2px 8px 2px rgba(34, 60, 80, 0.2);
+                }
+
+                .usersFeed>div>.icon {
+                    margin-right: 1em;
+                    height: 160px;
+                    aspect-ratio: 1/1;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    border-radius: 0.5em
+                }
+
+                .mGrade img {
+                    width: 30px;
+                }
+            </style>
+
+
+
+
+            <script type="text/javascript" src="../BD/users.js"></script>
+            <script>
+                var usersFeed = document.getElementsByClassName("usersFeed")[0];
+
+                for (i = 0; i < U.length; i++) {
+                    usersFeed.innerHTML += `
+                        <div>
+                            <div class="icon" style="background-image: url(../IMG/Ava/${i+1}.png)"></div>
+
+                            <div>
+                                <div class="name" style="font-size: 30px;">${U[i].NAME}</div>
+                                <a href="#">${U[i].EMAIL}</a>
+                                <div>${U[i].TITLE}</div>
+                                <div class="note">${U[i].NOTE}</div>
+                                <div class="mGrade">${grade(i)}</div>
+                            </div>
+
+                        </div>`;
+                };
+
+                function grade(i) {
+                    var n = '';
+
+                    for (m = 0; m < U[i].GRADE; m++) {
+                        n += '<font style="font-size: 2.5em;color:gold;">★</font>'
+                    };
+
+                    console.log(n);
+
+                    return n;
+                }
+            </script>
+
+
+        </main>
+
+
+        <footer>
+            <div class="wrapper">
+                <div class="wrapper_f">
+                    <a href=""><img src="../IMG/SVG/message/vk.svg"></a>
+                    <a href=""><img src="../IMG/SVG/message/gmail.svg"></a>
+                    <a href=""><img src="../IMG/SVG/message/telegram.svg"></a>
+                    <a href="tel:+78142332211">+7(814)-233-22-11</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body></html>

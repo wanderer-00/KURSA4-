@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Предложения</title><!-- Название вкладки -->
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css"><!-- Файл с основными стилями -->
+    <link rel="icon" href="../IMG/favicon.svg" type="image/x-icon"><!-- Иконка вкладки брацзера -->
+    <link rel="stylesheet" type="text/css" href="../CSS/slider.css">
+</head>
+
+<body>
+    <div class="cover">
+
+                <header>
+               
+            <!-- Блок логотипа -->
+            <div class="logo">
+                <a href="../index.html"><img src="../IMG/favicon.svg" alt="Логотип компании"></a>
+                <a href="../index.html">Название_Компании</a>
+            </div>
+
+
+            <!-- Навишационный блок -->
+            <div class="wrapper">
+                <a href="/HTML/about.html">О нас</a>
+                <a href="/HTML/offers.html">Предложения</a>
+                <a href="/HTML/feedback.html">Отзывы</a>
+                <a href="/HTML/contact.html">Контакты</a>
+            </div>
+
+        </header>
+
+
+        <main>
+
+
+            <h2 align="center">Предложения</h2>
+
+            <style>
+                .cluster {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+
+                .cluster>div {
+                    display: grid;
+                    margin: 10px;
+                    text-align: center;
+                    cursor: pointer;
+                    -webkit-box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.4);
+                    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+                    box-shadow: 2px 2px 8px 2px rgba(34, 60, 80, 0.2);
+                }
+                
+                .cluster>div:hover {
+                    background-color: aliceblue;
+                }
+
+                .cluster img {
+                    width: 200px;
+                    margin: auto;
+                }
+                
+                @media (orientation: portrait) {
+                    .cluster {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                    }
+                }
+            </style>
+
+            <div class="cluster">
+                <div class="box">
+                    <h2>Просто поспать</h2>
+                    <img src="../IMG/SVG/beds/1.svg">
+                    <p>Здоровый сон на свежем воздухе</p>
+                </div>
+
+                <div class="box">
+                    <h2>Поспать в коробке</h2>
+                    <img src="../IMG/SVG/beds/2.svg">
+                    <p>Бюджетное решение</p>
+                </div>
+
+                <div class="box">
+                    <h2>Комната на 1 день</h2>
+                    <img src="../IMG/SVG/beds/3.svg">
+                    <p>Для состоятельных клиентов</p>
+                </div>
+            </div>
+        </main>
+
+
+
+
+
+
+
+
+
+
+        <footer>
+            <div class="wrapper">
+                <div class="wrapper_f">
+                    <a href=""><img src="../IMG/SVG/message/vk.svg"></a>
+                    <a href=""><img src="../IMG/SVG/message/gmail.svg"></a>
+                    <a href=""><img src="../IMG/SVG/message/telegram.svg"></a>
+                    <a href="tel:+78142332211">+7(814)-233-22-11</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+<!-- Библиотека слайдер -->
+
+
+<script src="../JS/code.jquery.com_jquery-3.7.1.min.js"></script>
+<script src="../JS/slick.min.js"></script>
+<script src="../JS/slider.js"></script></html>
