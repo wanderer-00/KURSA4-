@@ -4,112 +4,93 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Предложения</title><!-- Название вкладки -->
+    <link rel="icon" href="../IMG/favicon.svg" type="image/x-icon"><!-- Иконка вкладки -->
     <link rel="stylesheet" type="text/css" href="../CSS/style.css"><!-- Файл с основными стилями -->
-    <link rel="icon" href="../IMG/favicon.svg" type="image/x-icon"><!-- Иконка вкладки брацзера -->
-    <link rel="stylesheet" type="text/css" href="../CSS/slider.css">
 </head>
 
-
-
-
-
-
-
 <style>
-    
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  position: relative;
-}
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
 
-.topnav #myLinks {
-  display: none;
-}
+    .topnav #myLinks {
+        display: none;
+    }
 
-.topnav a {
-  color: white;
-  padding: 2.8vh 16px;
-  text-decoration: none;
-  font-size: 42px;
-  display: block;
-}
+    .topnav a {
+        color: white;
+        padding: 2.8vh 16px;
+        text-decoration: none;
+        font-size: 42px;
+        display: block;
+    }
 
-.topnav a.icon {
-    height: 8vh;
-    width: 8vh;
-  background: black;
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
+    .topnav a.icon {
+        height: 8vh;
+        width: 8vh;
+        background: black;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
 
-.active {
-  background-color: #333;
-  color: white;
-}
+    .active {
+        background-color: #333;
+        color: white;
+    }
+
 </style>
+
 <!-- Simulate a smartphone / tablet -->
 <div class="mobile-container">
 
-<!-- Top Navigation Menu -->
-<div class="topnav">
-  <a href="../index.html" class="active">1</a>
-  <div id="myLinks">
-                <a href="../index.html">Главная</a>
-                <a href="../HTML/about.html">О нас</a>
-                <a href="../HTML/offers.html">Предложения</a>
-                <a href="../HTML/feedback.html">Отзывы</a>
-                <a href="../HTML/contact.html">Контакты</a>
-  </div>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <a href="../index.html" class="active">1</a>
+        <div id="myLinks">
+            <a href="../index.html">Главная</a>
+            <a href="../HTML/about.html">О нас</a>
+            <a href="../HTML/offers.html">Предложения</a>
+            <a href="../HTML/feedback.html">Отзывы</a>
+            <a href="../HTML/contact.html">Контакты</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
 </div>
 
 <!-- End smartphone / tablet look -->
-</div>
-
 <script>
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+    
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block")
+        {x.style.display = "none"}
+        else {x.style.display = "block"}
+    }
+    
 </script>
-
-
-
-
-
-
-
-
-
-
 
 
 <body>
     <div class="cover">
 
         <header>
-               
             <!-- Блок логотипа -->
             <div class="logo">
                 <a href="../index.html"><img src="../IMG/favicon.svg" alt="Логотип компании"></a>
                 <a href="../index.html">Название_Компании</a>
             </div>
-
-
+            
             <!-- Навишационный блок -->
             <div class="wrapper">
                 <a href="../HTML/about.html">О нас</a>
@@ -117,48 +98,45 @@ function myFunction() {
                 <a href="../HTML/feedback.html">Отзывы</a>
                 <a href="../HTML/contact.html">Контакты</a>
             </div>
-
         </header>
 
 
-        <main>
+       <style>
+            .cluster {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
 
+            .cluster>div {
+                display: grid;
+                margin: 10px;
+                text-align: center;
+                cursor: pointer;
+                -webkit-box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.4);
+                -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+                box-shadow: 2px 2px 8px 2px rgba(34, 60, 80, 0.2);
+            }
 
-            <h2 align="center">Предложения</h2>
+            .cluster>div:hover {
+                background-color: aliceblue;
+            }
 
-            <style>
+            .cluster img {
+                width: 200px;
+                margin: auto;
+            }
+
+            @media (orientation: portrait) {
                 .cluster {
                     display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-columns: 1fr;
                 }
+            }
 
-                .cluster>div {
-                    display: grid;
-                    margin: 10px;
-                    text-align: center;
-                    cursor: pointer;
-                    -webkit-box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.4);
-                    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-                    box-shadow: 2px 2px 8px 2px rgba(34, 60, 80, 0.2);
-                }
-                
-                .cluster>div:hover {
-                    background-color: aliceblue;
-                }
+        </style>
 
-                .cluster img {
-                    width: 200px;
-                    margin: auto;
-                }
-                
-                @media (orientation: portrait) {
-                    .cluster {
-                        display: grid;
-                        grid-template-columns: 1fr;
-                    }
-                }
-            </style>
-
+        <main>
+            <h2 align="center">Предложения</h2>
             <div class="cluster">
                 <div class="box">
                     <h2>Просто поспать</h2>
@@ -180,15 +158,6 @@ function myFunction() {
             </div>
         </main>
 
-
-
-
-
-
-
-
-
-
         <footer>
             <div class="wrapper">
                 <div class="wrapper_f">
@@ -199,22 +168,7 @@ function myFunction() {
                 </div>
             </div>
         </footer>
+        
     </div>
-
 </body>
-
-
-
-
-
-
-
-
-
-
-<!-- Библиотека слайдер -->
-
-
-<script src="../JS/code.jquery.com_jquery-3.7.1.min.js"></script>
-<script src="../JS/slick.min.js"></script>
-<script src="../JS/slider.js"></script></html>
+</html>

@@ -8,121 +8,85 @@
     <link rel="icon" href="IMG/favicon.svg" type="image/x-icon"><!-- Иконка вкладки брацзера -->
     <link rel="stylesheet" type="text/css" href="CSS/slider.css"><!-- Стили слайдера -->
 </head>
+
 <style>
-    
-.topnav {
- margin-top: 2vh;
-  overflow: hidden;
-  background-color: #333;
-  position: relative;
-}
+    .topnav {
+        margin-top: 2vh;
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
 
-.topnav #myLinks {
-  display: none;
-}
+    .topnav #myLinks {
+        display: none;
+    }
 
-.topnav a {
-  color: white;
-  padding: 2.8vh 15px;
-  text-decoration: none;
-  font-size: 42px;
-  display: block;
-}
+    .topnav a {
+        color: white;
+        padding: 2.8vh 15px;
+        text-decoration: none;
+        font-size: 42px;
+        display: block;
+    }
 
-.topnav a.icon {
-    height: 8vh;
-    width: 8vh;
-  background: black;
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
+    .topnav a.icon {
+        height: 8vh;
+        width: 8vh;
+        background: black;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
 
-.active {
-  background-color: #333;
-  color: white;
-}
+    .active {
+        background-color: #333;
+        color: white;
+    }
 </style>
 
 
 <!-- Top Navigation Menu -->
 <div class="topnav">
-  <a href="index.html" class="active">1</a>
-  <div id="myLinks">
-                <a href="#index.html">Главная</a>
-                <a href="HTML/about.html">О нас</a>
-                <a href="HTML/offers.html">Предложения</a>
-                <a href="HTML/feedback.html">Отзывы</a>
-                <a href="HTML/contact.html">Контакты</a>
-  </div>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+    <a href="index.html" class="active">1</a>
+    <div id="myLinks">
+        <a href="#index.html">Главная</a>
+        <a href="HTML/about.html">О нас</a>
+        <a href="HTML/offers.html">Предложения</a>
+        <a href="HTML/feedback.html">Отзывы</a>
+        <a href="HTML/contact.html">Контакты</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
 </div>
 
 
 
 <script>
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        
+        if (x.style.display === "block") {x.style.display = "none"}
+        else {x.style.display = "block"}
+    }
 </script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <body>
- 
-   
-   
-   
     <div class="cover">
 
         <header>
-               
             <!-- Блок логотипа -->
             <div class="logo">
                 <a href="index.html"><img src="IMG/favicon.svg" alt="Логотип компании"></a>
                 <a href="index.html">Название_Компании</a>
             </div>
+
             <!-- Навишационный блок -->
             <div class="wrapper">
                 <a href="HTML/about.html">О нас</a>
@@ -131,10 +95,12 @@ function myFunction() {
                 <a href="HTML/contact.html">Контакты</a>
             </div>
         </header>
+
+
         <main>
             <div class="wrapper">
                 <div class="wrapper_m">
-                   
+
                     <h2 align="center">Название_Компании</h2>
                     <p style="text-align: center">Название_Компании - для тех, кто ценит дизайн и экономичный образ мышления: ретро интерьер, просторные номера , идеи. Идеально подходит молодой аудитории, ценителям доты, живого общения в интернете, дискорд модам.</p>
                     <div class="slider">
@@ -145,17 +111,22 @@ function myFunction() {
                             <img src="IMG/slides/2.jpg">
                         </div>
                         <div class="slider__item">
-                            <img src="IMG/slides/3.pg">
+                            <img src="IMG/slides/3.png">
                         </div>
                         <div class="slider__item">
-                            <img src="IMG/slides/4.jg">
+                            <img src="IMG/slides/4.jpg">
                         </div>
                     </div>
+
                     <p>Это не только самая доступная гостинница, но и уникальный выбор для проведения самых важных и масштабных событий: концертов, фестивалей, выставок, свадеб, банкетов и вечеринок.</p>
+
+                    <!-- Google map -->
                     <iframe style="width: 100%" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d699.1990470470021!2d37.83691046115131!3d56.01058905885136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sru!4v1707486993715!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </main>
+
+
         <footer>
             <div class="wrapper">
                 <div class="wrapper_f">
@@ -164,16 +135,15 @@ function myFunction() {
                     <a href="#"><img src="IMG/SVG/message/telegram.svg"></a>
                     <a href="#"></a>
                     <a href="tel:+78142332211">+7(814)-233-22-11</a>
-                
+
                 </div>
             </div>
         </footer>
+
     </div>
 
 </body>
 
-<!-- Библиотека слайдер -->
-
-<script src="JS/code.jquery.com_jquery-3.7.1.min.js"></script>
-<script src="JS/slick.min.js"></script>
-<script src="JS/slider.js"></script></html>
+<script src="JS/code.jquery.com_jquery-3.7.1.min.js"></script><!-- JQuery -->
+<script src="JS/slick.min.js"></script><!-- Библиотека слайдера -->
+<script src="JS/slider.js"></script><!-- Настройки слайдера --></html>
