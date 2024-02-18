@@ -159,11 +159,8 @@ footer img {
 }
 
 @media (orientation:portrait) {
-    .wrapper {
-        width: 100%;
-    }
-    
-    header .wrapper {display:none}
+    .wrapper {width: 100%;}
+    header{display:none;}
 }
 @media (orientation:landscape) {
     
@@ -172,7 +169,6 @@ footer img {
         width: 100%;
         
     }
-
 
 }
 
