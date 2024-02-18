@@ -8,8 +8,113 @@
     <link rel="icon" href="IMG/favicon.svg" type="image/x-icon"><!-- Иконка вкладки брацзера -->
     <link rel="stylesheet" type="text/css" href="CSS/slider.css"><!-- Стили слайдера -->
 </head>
+<style>
+    
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+    height: 50px;
+    width: 50px;
+  background: black;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #333;
+  color: white;
+}
+</style>
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="index.html" class="active">1</a>
+  <div id="myLinks">
+                <a href="#index.html">Главная</a>
+                <a href="HTML/about.html">О нас</a>
+                <a href="HTML/offers.html">Предложения</a>
+                <a href="HTML/feedback.html">Отзывы</a>
+                <a href="HTML/contact.html">Контакты</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<!-- End smartphone / tablet look -->
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <body>
+ 
+   
+   
+   
     <div class="cover">
 
         <header>
@@ -19,8 +124,6 @@
                 <a href="index.html"><img src="IMG/favicon.svg" alt="Логотип компании"></a>
                 <a href="index.html">Название_Компании</a>
             </div>
-
-
             <!-- Навишационный блок -->
             <div class="wrapper">
                 <a href="HTML/about.html">О нас</a>
@@ -28,9 +131,7 @@
                 <a href="HTML/feedback.html">Отзывы</a>
                 <a href="HTML/contact.html">Контакты</a>
             </div>
-
         </header>
-
         <main>
             <div class="wrapper">
                 <div class="wrapper_m">
@@ -55,18 +156,12 @@
                     <iframe style="width: 100%" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d699.1990470470021!2d37.83691046115131!3d56.01058905885136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sru!4v1707486993715!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-
-
-
-
         </main>
-
         <footer>
             <div class="wrapper">
                 <div class="wrapper_f">
                     <a href="#"><img src="IMG/SVG/message/vk.svg"></a>
                     <a href="#"><img src="IMG/SVG/message/gmail.svg"></a>
-<!--                    <a href="#"><img src="IMG/SVG/message/telegram.svg"></a>-->
                     <a href="#"><img src="IMG/SVG/message/telegram.svg"></a>
                     <a href="#"></a>
                     <a href="tel:+78142332211">+7(814)-233-22-11</a>
